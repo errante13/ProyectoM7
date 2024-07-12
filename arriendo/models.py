@@ -11,8 +11,12 @@ class Usuario (models.Model):
     apellidos = models.CharField(max_length=50,null=False,blank=False)
     direccion = models.CharField(max_length=50,null=False,blank=False)
     telefono = models.CharField(max_length=50,null=False,blank=False)
-    correo = models.CharField(max_length=50,null=False,blank=False)
+    correo = models.CharField(max_length=50,unique=True,null=False,blank=False)
+    contrasena=models.CharField(max_length=50,null=False,blank=False)
     tipo_usuario = models.ForeignKey(Tipo_usuario,on_delete=models.CASCADE,null=False)
+    
+    def __str__(self):
+        return f'{self.nombres} {self.apellidos}'
 
 class Tipo_inmueble (models.Model):
     nombre = models.CharField(max_length=20)
@@ -27,8 +31,8 @@ class Comuna (models.Model):
 class Inmueble (models.Model):
     nombres=models.CharField(max_length=50,null=False,blank=False)
     descripcion = models.TextField()
-    mts_construidos = models.FloatField()
-    mts_terreno = models.FloatField()
+    m2_construidos = models.FloatField()
+    m2_terreno = models.FloatField()
     nun_estacionamientos = models.IntegerField(default=0)
     num_habitaciones = models.IntegerField(default=0)
     num_banos = models.IntegerField(default=0)
@@ -37,9 +41,15 @@ class Inmueble (models.Model):
     comuna = models.ForeignKey(Comuna,on_delete=models.CASCADE,null=False)
     region = models.ForeignKey(Region,on_delete=models.CASCADE,null=False)
     tipo_inmueble = models.ForeignKey(Tipo_inmueble,on_delete=models.CASCADE, null = False)
-    usuario = models.ForeignKey(Usuario,on_delete=models.CASCADE,null=False)
+    propietario = models.ForeignKey(Usuario,on_delete=models.CASCADE,null=False)
     
+class Estado_solicitud():
+    nombres=models.CharField(max_length=50,null=False,blank=False)
     
+class Solicitud(models.Model):
     
-    
+    arrendatario = models.OneToOneField('Usuario', related_name="solicitudes",null= False,blank=False, on_delete=models.CASCADE )
+    inmueble = models.OneToOneField('Inmueble', related_name="solicitudes",null= False,blank=False, on_delete=models.CASCADE )
+    estado = models.OneToOneField('Estado_solicitud', related_name=">solicitudes",null= False,blank=False, on_delete=models.CASCADE )
+    fecha_solicitud = models.DateField(auto_now_add=True)
     
