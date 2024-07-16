@@ -1,0 +1,145 @@
+[
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Antofagasta",
+    "region": 3
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Mejillones",
+    "region": 3
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Sierra Gorda",
+    "region": 3
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Taltal",
+    "region": 3
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Calama",
+    "region": 3
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Ollagüe",
+    "region": 3
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "San Pedro de Atacama",
+    "region": 3
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Tocopilla",
+    "region": 3
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "María Elena",
+    "region": 3
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Copiapó",
+    "region": 4
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Caldera",
+    "region": 4
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Tierra Amarilla",
+    "region": 4
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Chañaral",
+    "region": 4
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Diego de Almagro",
+    "region": 4
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Vallenar",
+    "region": 4
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Alto del Carmen",
+    "region": 4
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Freirina",
+    "region": 4
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Huasco",
+    "region": 4
+  }
+}
+]

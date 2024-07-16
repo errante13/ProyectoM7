@@ -22,11 +22,17 @@ class Tipo_inmueble (models.Model):
     nombre = models.CharField(max_length=20)
 
 class Region (models.Model):
-    nombre = models.CharField(max_length=30)
+    nombre = models.CharField(max_length=100)
+    
+    def __str__(self):
+        return f'{self.id} {self.nombre}'
 
 class Comuna (models.Model):
-    nombre = models.CharField(max_length=20)
+    nombre = models.CharField(max_length=100)
     region = models.ForeignKey(Region,on_delete=models.CASCADE,null=False)
+    
+    def __str__(self):
+       return f'{self.id} {self.nombre}'
     
 class Inmueble (models.Model):
     nombres=models.CharField(max_length=50,null=False,blank=False)
@@ -43,13 +49,13 @@ class Inmueble (models.Model):
     tipo_inmueble = models.ForeignKey(Tipo_inmueble,on_delete=models.CASCADE, null = False)
     propietario = models.ForeignKey(Usuario,on_delete=models.CASCADE,null=False)
     
-class Estado_solicitud():
+class Estado_solicitud(models.Model):
     nombres=models.CharField(max_length=50,null=False,blank=False)
     
 class Solicitud(models.Model):
     
     arrendatario = models.OneToOneField('Usuario', related_name="solicitudes",null= False,blank=False, on_delete=models.CASCADE )
     inmueble = models.OneToOneField('Inmueble', related_name="solicitudes",null= False,blank=False, on_delete=models.CASCADE )
-    estado = models.OneToOneField('Estado_solicitud', related_name=">solicitudes",null= False,blank=False, on_delete=models.CASCADE )
+    estado = models.OneToOneField('Estado_solicitud', related_name="solicitudes",null= False,blank=False, on_delete=models.CASCADE )
     fecha_solicitud = models.DateField(auto_now_add=True)
     

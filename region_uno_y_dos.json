@@ -1,0 +1,91 @@
+[
+{
+  "model": "arriendo.comuna",
+  "pk": 1,
+  "fields": {
+    "nombre": "Arica",
+    "region": 1
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Camarones",
+    "region": 1
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Putre",
+    "region": 1
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "General Lagos",
+    "region": 1
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Iquique",
+    "region": 2
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Alto Hospicio",
+    "region": 2
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Pozo Almonte",
+    "region": 2
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Camiña",
+    "region": 2
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Colchane",
+    "region": 2
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Huara",
+    "region": 2
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Pica",
+    "region": 2
+  }
+}
+
+]

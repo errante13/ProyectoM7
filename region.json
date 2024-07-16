@@ -1,0 +1,114 @@
+[
+{
+  "model": "arriendo.region",
+  "fields": {
+    "nombre": "Arica y Parinacota"
+  }
+},
+
+{
+  "model": "arriendo.region",
+  "fields": {
+    "nombre": "Tarapacá"
+  }
+},
+
+{
+  "model": "arriendo.region",
+  "fields": {
+    "nombre": "Antofagasta"
+  }
+},
+
+{
+  "model": "arriendo.region",
+  "fields": {
+    "nombre": "Atacama"
+  }
+},
+
+{
+  "model": "arriendo.region",
+  "fields": {
+    "nombre": "Coquimbo"
+  }
+},
+
+{
+  "model": "arriendo.region",
+  "fields": {
+    "nombre": "Valparaíso"
+  }
+},
+
+{
+  "model": "arriendo.region",
+  "fields": {
+    "nombre": "Región del Libertador Gral. Bernardo O'Higgins"
+  }
+},
+
+{
+  "model": "arriendo.region",
+  "fields": {
+    "nombre": "Región del Maule"
+  }
+},
+
+{
+  "model": "arriendo.region",
+  "fields": {
+    "nombre": "Región de Ñuble"
+  }
+},
+
+{
+  "model": "arriendo.region",
+  "fields": {
+    "nombre": "Región del Biobío"
+  }
+},
+
+{
+  "model": "arriendo.region",
+  "fields": {
+    "nombre": "Región de la Araucanía"
+  }
+},
+
+{
+  "model": "arriendo.region",
+  "fields": {
+    "nombre": "Región de Los Ríos"
+  }
+},
+
+{
+  "model": "arriendo.region",
+  "fields": {
+    "nombre": "Región de Los Lagos"
+  }
+},
+
+{
+  "model": "arriendo.region",
+  "fields": {
+    "nombre": "Región Aisén del Gral. Carlos Ibáñez del Campo"
+  }
+},
+
+{
+  "model": "arriendo.region",
+  "fields": {
+    "nombre": "Región de Magallanes y de la Antártica Chilena"
+  }
+},
+
+{
+  "model": "arriendo.region",
+  "fields": {
+    "nombre": "Región Metropolitana de Santiago"
+  }
+}
+
+]

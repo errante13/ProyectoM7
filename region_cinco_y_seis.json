@@ -1,0 +1,418 @@
+[
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "La Serena",
+    "region": 5
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Coquimbo",
+    "region": 5
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Andacollo",
+    "region": 5
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "La Higuera",
+    "region": 5
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Paiguano",
+    "region": 5
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Vicuña",
+    "region": 5
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Illapel",
+    "region": 5
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Canela",
+    "region": 5
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Los Vilos",
+    "region": 5
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Salamanca",
+    "region": 5
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Ovalle",
+    "region": 5
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Combarbalá",
+    "region": 5
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Monte Patria",
+    "region": 5
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Punitaqui",
+    "region": 5
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Río Hurtado",
+    "region": 5
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Valparaíso",
+    "region": 6
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Casablanca",
+    "region": 6
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Concón",
+    "region": 6
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Juan Fernández",
+    "region": 6
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Puchuncaví",
+    "region": 6
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Quintero",
+    "region": 6
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Viña del Mar",
+    "region": 6
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Isla de Pascua",
+    "region": 6
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Los Andes",
+    "region": 6
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Calle Larga",
+    "region": 6
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Rinconada",
+    "region": 6
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "San Esteban",
+    "region": 6
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "La Ligua",
+    "region": 6
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Cabildo",
+    "region": 6
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Papudo",
+    "region": 6
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Petorca",
+    "region": 6
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Zapallar",
+    "region": 6
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Quillota",
+    "region": 6
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Calera",
+    "region": 6
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Hijuelas",
+    "region": 6
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "La Cruz",
+    "region": 6
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Nogales",
+    "region": 6
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "San Antonio",
+    "region": 6
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Algarrobo",
+    "region": 6
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Cartagena",
+    "region": 6
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "El Quisco",
+    "region": 6
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "El Tabo",
+    "region": 6
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Santo Domingo",
+    "region": 6
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "San Felipe",
+    "region": 6
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Llaillay",
+    "region": 6
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Panquehue",
+    "region": 6
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Putaendo",
+    "region": 6
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Santa María",
+    "region": 6
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Quilpué",
+    "region": 6
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Limache",
+    "region": 6
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Olmué",
+    "region": 6
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Villa Alemana",
+    "region": 6
+  }
+}
+]
+
