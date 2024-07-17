@@ -1,0 +1,507 @@
+[
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Rancagua",
+    "region": 7
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Codegua",
+    "region": 7
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Coinco",
+    "region": 7
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Coltauco",
+    "region": 7
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Doñihue",
+    "region": 7
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Graneros",
+    "region": 7
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Las Cabras",
+    "region": 7
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Machalí",
+    "region": 7
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Malloa",
+    "region": 7
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Mostazal",
+    "region": 7
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Olivar",
+    "region": 7
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Peumo",
+    "region": 7
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Pichidegua",
+    "region": 7
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Quinta de Tilcoco",
+    "region": 7
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Rengo",
+    "region": 7
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Requínoa",
+    "region": 7
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "San Vicente",
+    "region": 7
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Pichilemu",
+    "region": 7
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "La Estrella",
+    "region": 7
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Litueche",
+    "region": 7
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Marchihue",
+    "region": 7
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Navidad",
+    "region": 7
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Paredones",
+    "region": 7
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "San Fernando",
+    "region": 7
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Chépica",
+    "region": 7
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Chimbarongo",
+    "region": 7
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Lolol",
+    "region": 7
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Nancagua",
+    "region": 7
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Palmilla",
+    "region": 7
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Peralillo",
+    "region": 7
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Placilla",
+    "region": 7
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Pumanque",
+    "region": 7
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Santa Cruz",
+    "region": 7
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Talca",
+    "region": 8
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Constitución",
+    "region": 8
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Curepto",
+    "region": 8
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Empedrado",
+    "region": 8
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Maule",
+    "region": 8
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Pelarco",
+    "region": 8
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Pencahue",
+    "region": 8
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Río Claro",
+    "region": 8
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "San Clemente",
+    "region": 8
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "San Rafael",
+    "region": 8
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Cauquenes",
+    "region": 8
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Chanco",
+    "region": 8
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Pelluhue",
+    "region": 8
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Curicó",
+    "region": 8
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Hualañé",
+    "region": 8
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Licantén",
+    "region": 8
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Molina",
+    "region": 8
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Rauco",
+    "region": 8
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Romeral",
+    "region": 8
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Sagrada Familia",
+    "region": 8
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Teno",
+    "region": 8
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Vichuquén",
+    "region": 8
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Linares",
+    "region": 8
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Colbún",
+    "region": 8
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Longaví",
+    "region": 8
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Parral",
+    "region": 8
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Retiro",
+    "region": 8
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "San Javier",
+    "region": 8
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Villa Alegre",
+    "region": 8
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Yerbas Buenas",
+    "region": 8
+  }
+}
+
+]
+

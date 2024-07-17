@@ -1,0 +1,353 @@
+[
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Temuco",
+    "region": 11
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Carahue",
+    "region": 11
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Cunco",
+    "region": 11
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Curarrehue",
+    "region": 11
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Freire",
+    "region": 11
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Galvarino",
+    "region": 11
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Gorbea",
+    "region": 11
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Lautaro",
+    "region": 11
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Loncoche",
+    "region": 11
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Melipeuco",
+    "region": 11
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Nueva Imperial",
+    "region": 11
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Padre las Casas",
+    "region": 11
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Perquenco",
+    "region": 11
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Pitrufquén",
+    "region": 11
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Pucón",
+    "region": 11
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Saavedra",
+    "region": 11
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Teodoro Schmidt",
+    "region": 11
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Toltén",
+    "region": 11
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Vilcún",
+    "region": 11
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Villarrica",
+    "region": 11
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Cholchol",
+    "region": 11
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Angol",
+    "region": 11
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Collipulli",
+    "region": 11
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Curacautín",
+    "region": 11
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Ercilla",
+    "region": 11
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Lonquimay",
+    "region": 11
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Los Sauces",
+    "region": 11
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Lumaco",
+    "region": 11
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Purén",
+    "region": 11
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Renaico",
+    "region": 11
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Traiguén",
+    "region": 11
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Victoria",
+    "region": 11
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Valdivia",
+    "region": 12
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Corral",
+    "region": 12
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Lanco",
+    "region": 12
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Los Lagos",
+    "region": 12
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Máfil",
+    "region": 12
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Mariquina",
+    "region": 12
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Paillaco",
+    "region": 12
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Panguipulli",
+    "region": 12
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "La Unión",
+    "region": 12
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Futrono",
+    "region": 12
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Lago Ranco",
+    "region": 12
+  }
+},
+
+{
+  "model": "arriendo.comuna",
+  "fields": {
+    "nombre": "Río Bueno",
+    "region": 12
+  }
+}
+]
