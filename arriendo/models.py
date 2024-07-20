@@ -20,6 +20,9 @@ class Usuario (models.Model):
 
 class Tipo_inmueble (models.Model):
     nombre = models.CharField(max_length=20)
+    
+    def __str__(self):
+        return f'{self.id} {self.nombre}'
 
 class Region (models.Model):
     nombre = models.CharField(max_length=100)

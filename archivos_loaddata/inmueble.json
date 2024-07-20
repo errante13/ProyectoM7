@@ -1,0 +1,78 @@
+[
+{
+  "model": "arriendo.inmueble",
+  "pk": 1,
+  "fields": {
+    "nombres": "inmueble pruebra 1",
+    "descripcion": "PRUEBA 1",
+    "m2_construidos": 50.0,
+    "m2_terreno": 70.0,
+    "nun_estacionamientos": 1,
+    "num_habitaciones": 1,
+    "num_banos": 1,
+    "direccion": "CALLE 1234",
+    "precio_mensual": 140000.0,
+    "comuna": 302,
+    "region": 16,
+    "tipo_inmueble": 1,
+    "propietario": "176677279"
+  }
+},
+
+{
+  "model": "arriendo.inmueble",
+  "fields": {
+    "nombres": "inmueble pruebra 2",
+    "descripcion": "PRUEBA 2",
+    "m2_construidos": 70.0,
+    "m2_terreno": 100.0,
+    "nun_estacionamientos": 1,
+    "num_habitaciones": 2,
+    "num_banos": 2,
+    "direccion": "CALLE 4321",
+    "precio_mensual": 150000.0,
+    "comuna": 302,
+    "region": 15,
+    "tipo_inmueble": 1,
+    "propietario": "176677279"
+  }
+},
+
+{
+  "model": "arriendo.inmueble",
+  "fields": {
+    "nombres": "inmueble pruebra 3",
+    "descripcion": "PRUEBA 3",
+    "m2_construidos": 50.0,
+    "m2_terreno": 70.0,
+    "nun_estacionamientos": 1,
+    "num_habitaciones": 1,
+    "num_banos": 1,
+    "direccion": "CALLE 3421",
+    "precio_mensual": 150000.0,
+    "comuna": 302,
+    "region": 14,
+    "tipo_inmueble": 2,
+    "propietario": "176677279"
+  }
+},
+
+{
+  "model": "arriendo.inmueble",
+  "fields": {
+    "nombres": "inmueble pruebra 4",
+    "descripcion": "PRUEBA 4",
+    "m2_construidos": 30.0,
+    "m2_terreno": 50.0,
+    "nun_estacionamientos": 1,
+    "num_habitaciones": 1,
+    "num_banos": 1,
+    "direccion": "CALLE 1234",
+    "precio_mensual": 250000.0,
+    "comuna": 302,
+    "region": 13,
+    "tipo_inmueble": 2,
+    "propietario": "176677279"
+  }
+}
+]
