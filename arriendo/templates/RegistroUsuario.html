@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block content %}
+<div class ="container my-5">
+    <h1> REGISTRO </h1>
+<form action="{% url "registrarse" %}" method="POST">
+    {% csrf_token %}
+    <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" class="form-control" id="username" name = "username">
+    </div>
+    <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" name = "nombre">
+    </div>
+    <div class="mb-3">
+        <label for="apellido" class="form-label">Apellido</label>
+        <input type="text" class="form-control" id="apellido" name = "apellido">
+    </div>
+    <div class="mb-3">
+        <label for="rut" class="form-label">Rut</label>
+        <input type="text" class="form-control" id="rut" name = "rut">
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Correo</label>
+      <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">ingrese un correo válido.</div>
+    </div>
+    <div class="mb-3">
+        <label for="direccion" class="form-label">Direccion</label>
+        <input type="text" class="form-control" id="direccion" name = "direccion">
+    </div>
+    <div class="mb-3">
+        <label for="telefono" class="form-label">telefono</label>
+        <input type="text" class="form-control" id="telefono" name = "telefono">
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Contraseña</label>
+      <input type="password" class="form-control" id="password" name = "password">
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Registrar</button>
+
+
+  </form>
+
+</div>
+{% endblock  %}

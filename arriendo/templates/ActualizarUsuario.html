@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class ="container my-5">
+ <h1>Actualizar datos </h1>
+    <form action= ""method='POST'>
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="id_rut" class="form-label">Rut:</label>
+            <input type="text"  class="form-control" name="rut" value="176677279" maxlength="9" required="" id="id_rut">
+        </div>
+        <div class="mb-3">
+            <label for="id_direccion" class="form-label">Direccion:</label>
+            <input type="text" class="form-control" name="direccion" value="direccion" maxlength="50" id="id_direccion">
+        </div>
+        <div class="mb-3">
+            <label for="id_telefono" class="form-label" >Telefono:</label>
+            <input type="text" class="form-control" name="telefono" value="12345678" maxlength="50" id="id_telefono">
+        </div>
+            <button type="submit" class="btn btn-primary">Actualizar</button>
+    </form>
+</div>
+
+<!-- MOSTRAR  DATOS USUARIO -->
+<div class ="container ">
+<h1>Usuario: {{ usuario.user.first_name }}</h1>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+          <th scope="col">Rut</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Apellido</th>
+          <th scope="col">Correo</th>
+          <th scope="col">Teléfono</th>
+          <th scope="col">Dirección</th>
+          <th scope="col">Usuario</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">{{ usuario.rut }}</th>
+          <td>{{ usuario.user.first_name }}</td>
+          <td>{{ usuario.user.last_name }}</td>
+          <td>{{ usuario.user.email }}</td>
+          <td>{{ usuario.telefono }}</td>
+          <td>{{ usuario.direccion }}</td>
+          <td>{{ usuario.user.username }}</td>
+        </tr>
+        
+      </tbody>
+</table>
+</div>
+{% endblock %}
+
+
+
+
+
+   

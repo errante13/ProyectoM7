@@ -1,0 +1,35 @@
+{% block 'usuario_menu' %}
+<div class="container-fluid text-center py-2 bg-light-subtle justify-content-center usuario_menu">
+    <!-- AUTENTICACION BOTONES -->
+
+    {% if user.is_authenticated %}
+    <a class="link-body-emphasis text-decoration-none icon-link-hover mx-2" style=" --bs-hover-color-rgb: 136, 151, 255;"><h4 id ="nombre_mostrar"> Bienvenido, {{user.first_name}} </h4></a>
+        <div id ="menu" class="container-fluid" style="display:none">
+            <!--style="display:none"-->
+            <nav class="navbar navbar-expand-lg bbg-light-subtle" >
+                <div class="container-fluid">
+                  
+                    <ul class="navbar-nav mx-auto">
+                        {% if user.is_staff == 1  %}
+                            <li class="nav-item">
+                                <a class="icon-link icon-link-hover mx-2" style="--bs-link-hover-color-rgb: 136, 151, 255;" href="">Agregar Flan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="icon-link icon-link-hover mx-2" style="--bs-link-hover-color-rgb: 136, 151, 255;" href="">Editar Flan</a>
+                            </li>
+                        {% endif %}
+                            <li class="nav-item">
+                                <a class="icon-link icon-link-hover" style="--bs-link-hover-color-rgb: 255, 6, 29;" href="">Cerrar Sesión</a>
+                            </li>
+    {% else %}
+                            <li class="nav-item" style="list-style-type: none;"> 
+                                <a class="icon-link icon-link-hover mx-2" style="--bs-link-hover-color-rgb: 136, 151, 255;" href="">Iniciar Sesión</a>
+                            </li>  
+    {% endif %}  
+                    </ul>
+                </div>
+          </nav>
+        </div>
+</div>
+{% endblock  %}
+

@@ -1,12 +1,21 @@
+from django.contrib.auth.models import User
 from .models import *
  
  
  #Usuario CRUD
  
-def crear_usuario(nombres,apellidos,rut,direccion,correo,tipo):
-    usuario = Usuario(rut=rut,nombres=nombres,apellidos=apellidos,direccion=direccion,correo=correo,Tipo_usuario=tipo)
+def crear_usuario(username,nombre,apellido,contrasena,email,telefono,rut,direccion):
+    #crea al user por defecto en el sistema
+    user = User.objects.create_user(username, email, contrasena)
+    user.first_name = nombre
+    user.last_name= apellido
+    user.save()
+    #recuperar la instancia del tipo de usuario
+    tipoUsuario = Tipo_usuario.objects.get(pk = 3)
+    #crea al usuario personalizado
+    usuario = Usuario(user=user,rut=rut,direccion=direccion,telefono=telefono,tipo_usuario=tipoUsuario)
     usuario.save()
-    return usuario
+    
 
 def obtener_usuario(rut):
     return Usuario.objects.get(pk=rut)

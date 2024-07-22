@@ -1,7 +1,6 @@
 [
 {
   "model": "arriendo.inmueble",
-  "pk": 1,
   "fields": {
     "nombres": "inmueble pruebra 1",
     "descripcion": "PRUEBA 1",

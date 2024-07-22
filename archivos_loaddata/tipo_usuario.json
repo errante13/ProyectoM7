@@ -1,0 +1,22 @@
+[
+  {
+    "model": "arriendo.Tipo_usuario",
+    "fields": {
+      "nombre": "Administrador"
+    }
+  },
+
+{
+  "model": "arriendo.Tipo_usuario",
+    "fields": {
+      "nombre": "Arrendador"
+    }
+  },
+{
+  "model": "arriendo.Tipo_usuario",
+    "fields": {
+      "nombre": "Arrendatario"
+    }
+  }
+
+]

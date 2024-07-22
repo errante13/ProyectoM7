@@ -1,22 +1,29 @@
+from django.contrib.auth.models import User
 from django.db import models
 
 # Create your models here.
 
 class Tipo_usuario(models.Model):
     nombre = models.CharField(max_length=20)
+   
+    def __str__(self):
+        return f'{self.nombre}'
 
 class Usuario (models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
     rut = models.CharField(max_length=9,primary_key=True)
-    nombres=models.CharField(max_length=50,null=False,blank=False)
-    apellidos = models.CharField(max_length=50,null=False,blank=False)
-    direccion = models.CharField(max_length=50,null=False,blank=False)
-    telefono = models.CharField(max_length=50,null=False,blank=False)
-    correo = models.CharField(max_length=50,unique=True,null=False,blank=False)
-    contrasena=models.CharField(max_length=50,null=False,blank=False)
-    tipo_usuario = models.ForeignKey(Tipo_usuario,on_delete=models.CASCADE,null=False)
+    direccion = models.CharField(max_length=50,null=True,blank=True)
+    telefono = models.CharField(max_length=50,null=True,blank=True)
+    tipo_usuario = models.ForeignKey(Tipo_usuario,on_delete=models.CASCADE,null=True,blank=True)
+    # nombres=models.CharField(max_length=50,null=False,blank=False)
+    # apellidos = models.CharField(max_length=50,null=False,blank=False)
+    # correo = models.CharField(max_length=50,unique=True,null=False,blank=False)
+    # contrasena=models.CharField(max_length=50,null=False,blank=False)
+    
     
     def __str__(self):
-        return f'{self.nombres} {self.apellidos}'
+        return f'{self.user.username}'
+
 
 class Tipo_inmueble (models.Model):
     nombre = models.CharField(max_length=20)

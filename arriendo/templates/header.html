@@ -1,0 +1,59 @@
+{% load static %} 
+{% block 'header' %}
+
+<header class="p-3 ">
+    
+   <!-- -------- BARRA DE NAVEGACION --------- -->
+   <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Sistema Arriendo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+        
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Bienvenido</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+       
+        
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="{% url "home" %}">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Propiedades</a>
+            </li>
+            {% if user.is_authenticated %}
+            <li class="nav-item dropdown">
+              {%if user.first_name%}
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{user.first_name}}</a>
+              {% else %} 
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{user.username}}</a>
+              {% endif %}
+              <ul class="dropdown-menu dropdown-menu-dark">
+              
+                <li><a class="dropdown-item" href="{% url "actualizar" %}">Modificar datos</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="{% url "logout" %}">Cerrar sesión</a></li>
+                {% else %} 
+                <li><a class="dropdown-item" href="{% url "login" %}">Iniciar sesión</a></li>
+                {% endif %}
+              </ul>
+             </li> {% comment %} nav-item dropdowm end  {% endcomment %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+    {% comment %} {% block 'usuario_menu' %}
+    {% include "menu_user.html" %}
+    {% endblock  %} {% endcomment %}
+</header> 
+
+{% endblock  %}
+
