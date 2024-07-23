@@ -11,6 +11,7 @@ urlpatterns = [
     path('filtrar-comunas/', filtrar_comunas, name='filtrar_comunas'),
     path('inmueble',MostrarPropiedades , name='mostrarInmuebles'),
     path('inmueble/listar', MisPropiedades , name='misPropiedades'),
-    path('inmueble/<int:id>/', actualizarInmueble , name='editarInmueble')
+    path('inmueble/<int:id>/', actualizarInmueble , name='editarInmueble'),
+    path('inmueble/filtrar', buscarPor , name='filtrarInmueble'),
     
 ]

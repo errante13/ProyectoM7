@@ -3,14 +3,16 @@ from django.http import HttpResponseRedirect, JsonResponse
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login,logout,authenticate
-from arriendo.models import Usuario,Inmueble,Comuna
+from arriendo.models import Usuario,Inmueble,Comuna,Region,Tipo_inmueble
 from arriendo.services import crear_usuario
 from arriendo.forms import UsuarioForms,InmuebleForm
 from django.contrib import messages
 
 
 def index (request):
-    return render(request,'index.html')
+    regiones = Region.objects.all()
+    tipo = Tipo_inmueble.objects.all()
+    return render(request,'index.html',{ 'regiones':regiones,'tipo':tipo})
 
 
 def registrarse (request):
@@ -108,3 +110,37 @@ def actualizarInmueble(request, id):
     else:
         form = InmuebleForm(instance=inmueble)
         return render(request, 'inmuebleDetalle.html', {'form': form})
+    
+def buscarPor(request):
+    
+    idregion = request.POST["id_region"]
+    idcomuna = request.POST["id_region"]
+    idtipo = request.POST["tipo_inmueble"]
+    
+    if request.method == "POST":
+        #region, comuna y tipo
+        if idregion:
+           inmueble = Inmueble.objects.filter(region = idregion)
+           print(inmueble)
+           return render(request, 'MostrarPropiedades.html', {'inmueble':inmueble})
+        elif idtipo:
+             inmueble = Inmueble.objects.filter(tipo_inmueble =idtipo)
+             return render(request, 'MostrarPropiedades.html', {'inmueble':inmueble})
+        elif idcomuna:
+             inmueble = Inmueble.objects.filter(comuna =idcomuna)
+             return render(request, 'MostrarPropiedades.html', {'inmueble':inmueble})
+        #region y tipo 
+        elif idregion and idtipo:
+             inmueble = Inmueble.objects.filter(region =idregion,tipo_inmueble=idtipo)
+             return render(request, 'MostrarPropiedades.html', {'inmueble':inmueble})
+        
+        #comuna y Tipo
+        elif idcomuna and idtipo:
+             inmueble = Inmueble.objects.filter(comuna =idcomuna,tipo_inmueble=idtipo)
+             return render(request, 'MostrarPropiedades.html', {'inmueble':inmueble})
+        else:
+            inmueble = Inmueble.objects.all()
+            return render(request, 'MostrarPropiedades.html',{'inmueble':inmueble})
+    
+   
+   

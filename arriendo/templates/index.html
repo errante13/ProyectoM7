@@ -4,9 +4,38 @@
 
     <div class= "container my-5">
         <h1 class="text-center">Inicio</h1>
-        <form class="d-flex mt-3" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-success" type="submit">Search</button>
+        <form action ="{% url "filtrarInmueble" %}" class="row g-3 align-items-center ms-5" method='POST'>
+        {% csrf_token %}
+            <div class="col-3">
+                
+                <select name="id_region" id="id_region" class="form-control me-2" >
+                    <option value="">Región</option>
+                    {% for region in regiones %}
+                        <option value="{{ region.id }}" {% if request.GET.region == region.id|stringformat:"s" %}selected{% endif %}>{{ region.nombre }}</option>
+                    {% endfor %} 
+                </select>               
+            </div>  
+
+            
+            <div class="col-3">
+                <select name="id_comuna" id="id_comuna" class="form-control">
+                    <option value="">Comuna</option>
+                    {% for comuna in comunas %}
+                        <option value="{{ comuna.id }}" {% if request.GET.comuna == comuna.id|stringformat:"s" %}selected{% endif %}>{{ comuna.nombre }}</option>
+                    {% endfor %}
+                </select>    
+            </div>
+            <div class="col-3">
+                <select name="tipo_inmueble" id="tipo_inmueble" class="form-control">
+                    <option value="">Tipo Inmueble</option>
+                    {% for tipo in tipo %}
+                        <option value="{{ tipo.id }}" {% if request.GET.comuna == comuna.id|stringformat:"s" %}selected{% endif %}>{{ tipo.nombre }}</option>
+                    {% endfor %}
+                </select>    
+            </div>
+            <div class="col">  
+                <button class="btn btn btn-success" type="submit">Buscar</button>
+            </div>
         </form>
                 
     </div>  
