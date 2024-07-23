@@ -89,11 +89,11 @@ def filtrar_comunas(request):
     region_id = request.GET.get('region')
     comunas = Comuna.objects.filter(region_id=region_id).all()
     return JsonResponse(list(comunas.values('id', 'nombre')), safe=False)
-
+@login_required
 def MisPropiedades(request):
      inmueble = Inmueble.objects.filter(propietario=request.user.usuario.rut)
      return render(request, 'MisPropiedades.html', {'inmueble':inmueble})
-
+@login_required
 def actualizarInmueble(request, id):
     inmueble = Inmueble.objects.get(pk=id)
     if request.method == "POST":
