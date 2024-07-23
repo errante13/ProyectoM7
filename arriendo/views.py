@@ -1,10 +1,11 @@
-from django.http import HttpResponseRedirect
-from django.shortcuts import render, get_object_or_404, redirect
+import json
+from django.http import HttpResponseRedirect, JsonResponse
+from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login,logout,authenticate
-from arriendo.models import Usuario
+from arriendo.models import Usuario,Inmueble,Comuna
 from arriendo.services import crear_usuario
-from arriendo.forms import UsuarioForms
+from arriendo.forms import UsuarioForms,InmuebleForm
 from django.contrib import messages
 
 
@@ -28,11 +29,11 @@ def registrarse (request):
         direccion = request.POST["direccion"]
         crear_usuario(username,nombre,apellido,contrasena,email,telefono,rut,direccion)
         return redirect ("login")
- 
+
+@login_required 
 def actualizar(request):
     
     usuario = Usuario.objects.get(pk=request.user.usuario.rut)
-    user = request.user
     if request.method == "POST":
         form = UsuarioForms(request.POST, instance=usuario)
         
@@ -43,7 +44,7 @@ def actualizar(request):
 
     else:
         form = UsuarioForms(instance=usuario)
-        return render(request, 'ActualizarUsuario.html', {'form': form,'usuario': usuario, 'user':user})
+        return render(request, 'ActualizarUsuario.html', {'form': form,'usuario': usuario})
 
 def iniciarSesion(request):
     
@@ -57,14 +58,53 @@ def iniciarSesion(request):
             login(request, user)
             return redirect('actualizar')
     
-
 def cerrarSesion(request):
     
     logout(request)
     messages.info(request,"sesión cerrada con éxito")
     return redirect ('home') 
 
-def perfil(request):
-    
-    usuario = Usuario.objects.get(pk=request.user.usuario.rut)
-    return render(request, 'InfoPerfil.html', {'usuario': usuario})
+def MostrarPropiedades(request):
+     inmueble = Inmueble.objects.all()
+     return render(request, 'MostrarPropiedades.html', {'inmueble':inmueble})
+
+@login_required
+def crearInmueble(request):
+    if request.method == "POST":
+        form = InmuebleForm(request.POST)
+        if form.is_valid():
+            inmueble = form.save(commit=False)
+            inmueble.propietario = Usuario.objects.get(pk=request.user.usuario.rut)
+            inmueble.save()
+            form.save()
+            messages.success(request,"datos agregados Correctamente")
+            return redirect('misPropiedades')  
+    else:
+        form = InmuebleForm()
+        return render(request,'CrearInmueble.html',{'form':form})
+  
+def filtrar_comunas(request):
+    region_id = request.GET.get('region')
+    comunas = Comuna.objects.filter(region_id=region_id).all()
+    return JsonResponse(list(comunas.values('id', 'nombre')), safe=False)
+
+def MisPropiedades(request):
+     inmueble = Inmueble.objects.filter(propietario=request.user.usuario.rut)
+     return render(request, 'MisPropiedades.html', {'inmueble':inmueble})
+
+def actualizarInmueble(request, id):
+    inmueble = Inmueble.objects.get(pk=id)
+    if request.method == "POST":
+        if "save" in request.POST:
+            form = InmuebleForm(request.POST, instance=inmueble)
+            if form.is_valid():
+                form.save()
+                messages.success(request,"datos actualizados Correctamente")
+                return redirect('misPropiedades') 
+        elif "delete" in request.POST:
+            inmueble.delete()
+            messages.success(request,"Datos eliminados correctamente")
+            return redirect('misPropiedades') 
+    else:
+        form = InmuebleForm(instance=inmueble)
+        return render(request, 'inmuebleDetalle.html', {'form': form})

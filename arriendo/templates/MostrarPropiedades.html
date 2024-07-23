@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<div class= "container my-5">
+    <h1 class="text-center">Propiedades</h1>
+    
+    {% for inmu in inmueble %}
+      <div class="card w-50 my-5">
+        <div class="card-body">
+          <h5 class="card-title">{{inmu.nombres}} </h5>
+          <p class="card-text">{{inmu.descripcion}} </p>
+          <p class="card-text">{{inmu.propietario}} </p>
+          <a href="#" class="btn btn-primary">ir a ver</a>
+        </div>    
+      </div>
+    {% endfor %}
+
+  </div>
+{% endblock %}
+
+
+

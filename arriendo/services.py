@@ -38,8 +38,9 @@ def borrar_usuario(rut):
     
 #inmueble CRUD 
 
-def crear_inmueble(nombre,descripcion,construido,terreno,estacionamiento,habitaciones,banos,direccion,precio,comuna,region,tipo,usuario):
-    inmueble = Inmueble(nombres=nombre,descripcion=descripcion,m2_construidos=construido,m2_terreno=terreno,nun_estacionamientos=estacionamiento,num_habitaciones=habitaciones,num_banos=banos,direccion=direccion,precio_mensual=precio,comuna=comuna,region=region,tipo_inmueble=tipo,propietario=usuario)
+def crear_inmueble(nombre,descripcion,construido,terreno,estacionamiento,habitaciones,banos,direccion,precio,comuna,region,tipo,propietario):
+    
+    inmueble = Inmueble(nombres=nombre,descripcion=descripcion,m2_construidos=construido,m2_terreno=terreno,nun_estacionamientos=estacionamiento,num_habitaciones=habitaciones,num_banos=banos,direccion=direccion,precio_mensual=precio,comuna=comuna,region=region,tipo_inmueble=tipo,propietario=propietario)
     inmueble.save() 
     return inmueble
 

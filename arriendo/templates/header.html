@@ -24,8 +24,20 @@
               <a class="nav-link active" aria-current="page" href="{% url "home" %}">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Propiedades</a>
+              <a class="nav-link" href="{% url "mostrarInmuebles" %}">Propiedades</a>
             </li>
+            {% if user.is_authenticated %}
+            <li class="nav-item">
+              <a class="nav-link" href="{% url "misPropiedades" %}">Mis Propiedades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url "crearInmueble" %}">Agregar Inmueble</a>
+            </li>
+            {% else %}
+            <li class="nav-item">
+              <a class="nav-link" href="{% url "registrarse" %}">Registrarse</a>
+            </li>
+            {% endif %}
             {% if user.is_authenticated %}
             <li class="nav-item dropdown">
               {%if user.first_name%}
@@ -34,11 +46,14 @@
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{user.username}}</a>
               {% endif %}
               <ul class="dropdown-menu dropdown-menu-dark">
-              
+                {% comment %} <li><a class="dropdown-item" href="{% url "crearInmueble" %}">Agregar Inmueble</a></li> {% endcomment %}
+                <li>
                 <li><a class="dropdown-item" href="{% url "actualizar" %}">Modificar datos</a></li>
+                
                 <li>
                   <hr class="dropdown-divider">
                 </li>
+
                 <li><a class="dropdown-item" href="{% url "logout" %}">Cerrar sesión</a></li>
                 {% else %} 
                 <li><a class="dropdown-item" href="{% url "login" %}">Iniciar sesión</a></li>

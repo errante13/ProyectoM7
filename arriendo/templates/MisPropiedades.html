@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class= "container my-5">
+    <h1 class="text-center"> Mis Propiedades</h1>
+    
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+              <th scope="col">Nombre</th>
+              <th scope="col">Construidos</th>
+              <th scope="col">Terreno</th>
+              <th scope="col">Estacionamientos</th>
+              <th scope="col">Habitaciones</th>
+              <th scope="col">Baños</th>
+              <th scope="col">Comuna</th>
+              <th scope="col">Editar</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            {% for inmu in inmueble %}
+            <tr>
+              <th scope="row">{{ inmu.nombres }}</th>
+              <td>{{ inmu.m2_construidos }}</td>
+              <td>{{ inmu.m2_terreno }}</td>
+              <td>{{ inmu.nun_estacionamientos }}</td>
+              <td>{{ inmu.num_habitaciones }}</td>
+              <td>{{ inmu.num_banos }}</td>
+              <td>{{ inmu.comuna }}</td>
+              <td><a href="{% url "editarInmueble" inmu.id %}" class="btn btn-primary btn-sm">Editar</a> </td>
+
+            </tr>
+            {% endfor %}
+          </tbody>
+    </table>
+    </div>
+
+{% endblock %}
